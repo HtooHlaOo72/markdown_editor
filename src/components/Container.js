@@ -58,16 +58,25 @@ class Container extends React.Component {
   };
   render() {
     return (
-      <div>
-        <hr />
-        <h1 className='headings'>Markdown Editor</h1>
-        <hr />
-        <Editor editorText={this.state.text} onChange={this.handleChange} />
-        <hr />
-        <h1 className='headings'>Markdown Preview</h1>
-        <hr />
-        <MdPreview mdText={this.state.text} />
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-md-6 col-12'>
+            <hr />
+            <h1 className='headings'>Markdown Editor</h1>
+            <hr />
+            <Editor editorText={this.state.text} onChange={this.handleChange} />
+          </div>
+          <div className='col-md-6 col-12'>
+            <hr />
+            <h1 className='headings'>Markdown Preview</h1>
+            <hr />
+            <MdPreview mdText={this.state.text} />
+            
+          </div>
+          
+        </div>
         <Footer />
+        
       </div>
     );
   }
