@@ -7,7 +7,7 @@ const Editor = (props) => {
       <textarea
         name="editor"
         rows="30"
-        cols="80"
+        
         id="editor"
         defaultValue={props.editorText}
         placeholder="Enter some text to make markdown"

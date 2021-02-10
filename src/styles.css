@@ -2,3 +2,26 @@
   font-family: sans-serif;
   text-align: center;
 }
+.headings{
+background-color:burlywood;
+background-clip: border-box;
+padding:10px;
+border-radius:50%;
+}
+#preview{
+background-color: bisque;
+border-radius: 2.5%;
+text-align: left;
+overflow: hidden;
+font-size:18px;
+}
+#editor{
+background-color: bisque;
+border-radius: 2.5%;
+font-size: 18px;
+width:100%;
+}
+#footer{
+  text-align: center;
+  font-size: 20px;
+}

@@ -4,7 +4,7 @@ import gfm from "remark-gfm";
 
 const MdPreview = (props) => {
   return (
-    <div id="preview">
+    <div id="preview" className='container'>
       <ReactMarkdown plugins={[gfm]} children={props.mdText} />
     </div>
   );

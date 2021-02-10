@@ -1,6 +1,7 @@
 import React from "react";
 import Editor from "./Editor";
 import MdPreview from "./MdPreview";
+import Footer from './Footer';
 const placeholder = `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
@@ -59,13 +60,14 @@ class Container extends React.Component {
     return (
       <div>
         <hr />
-        <h1>Markdown Editor</h1>
+        <h1 className='headings'>Markdown Editor</h1>
         <hr />
         <Editor editorText={this.state.text} onChange={this.handleChange} />
         <hr />
-        <h1>Markdown Preview</h1>
+        <h1 className='headings'>Markdown Preview</h1>
         <hr />
         <MdPreview mdText={this.state.text} />
+        <Footer />
       </div>
     );
   }
